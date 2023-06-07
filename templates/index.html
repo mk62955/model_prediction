@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Model</title>
+    <link href="/static/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="/static/css/style.css" rel="stylesheet"/>
+    <script src="/static/js/bootstrap.min.js"></script>
+</head>
+<body>
+        
+        <section class="sec">
+          <div class="container py-3 h-100">
+            <div class="row d-flex justify-content-center align-items-center h-100">
+              <div class="col">
+                <form class="card card-registration my-4" action="output">
+                  <div class="row g-0">
+                    <div class="col-xl-6 d-none d-xl-block">
+                      <img src="../static/img/s4.png"  class="p-5"
+                        alt="Sample photo" height="600px" width="550px"
+                        style="border-top-left-radius: .25rem; border-bottom-left-radius: .25rem;" />
+                    </div>
+                    <div class="col-xl-6">
+                      <div class="card-body p-md-5 text-black">
+                        <h3 class="mb-5 text-uppercase">Weather Prediction Model</h3>
+        
+                        <div class="row">
+                          <div class="col-md-6 mb-4">
+                            <div class="form-outline">
+                              <label class="form-label" for="form3Example1m">Maximum Temperature(°C)</label>
+                              <input type="text" class="form-control form-control-lg" id="temp_max" name="temp_max"  required>
+                              
+                            </div>
+                          </div>
+                          <div class="col-md-6 mb-4">
+                            <div class="form-outline">
+                              <label class="form-label" for="form3Example1n">Minimum Temperature(°C)</label>
+                              <input type="text" class="form-control form-control-lg" id="temp_min" name="temp_min"  required>
+                              
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="form-outline mb-4">
+                          <label class="form-label" for="form3Example8">Relative Humidity</label>
+                          <input type="text" class="form-control form-control-lg" id="r_humid" name="r_humid"  required>
+                        </div>
+
+                        <div class="form-outline mb-4">
+                          <label class="form-label" for="form3Example9">Precipitation(mm/day)</label>
+                          <input type="text" class="form-control form-control-lg" id="precipitation" name="precipitation" required>
+                          
+                        </div>
+        
+                        <div class="row">
+                          <div class="col-md-6 mb-4">
+                            <div class="form-outline">
+                              <label class="form-label" for="form3Example1m1">Maximum WindSpeed(m/s)</label>
+                              <input type="text" class="form-control form-control-lg" id="wind_max" name="wind_max"  required>
+                              
+                            </div>
+                          </div>
+                          <div class="col-md-6 mb-4">
+                            <div class="form-outline">
+                              <label class="form-label" for="form3Example1n1">Minimum WindSpeed(m/s)</label>
+                              <input type="text" class="form-control form-control-lg" id="wind_min" name="wind_min"  required>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="d-flex justify-content-end pt-3">
+                          <button type="submit" class="btn btn-warning btn-lg ms-2 w-100">Predict</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+</body>
+</html>

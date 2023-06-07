@@ -1,0 +1,11 @@
+.sec{
+    background-image: url("../img/env3.jpeg");
+    background-size: 100% 100%;
+    height: 100vh;
+    width: 100vw;
+    background-repeat: no-repeat;
+}
+
+.trans{
+    background-color: transparent;
+}
